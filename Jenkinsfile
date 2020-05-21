@@ -6,7 +6,7 @@ node {
 	}
 
 	stage('Build image') {
-		app = sh label: '', script: 'docker build -t test1 .'
+		app = sh label: '', script: 'sudo docker build -t test1 .'
 	}
 
 	stage('Test') {
